@@ -25,7 +25,7 @@ navLink.forEach(n => n.addEventListener("click", linkActiv));
 
 // scroll section active link
 
-const sections = document.querySelectorAll("section.id");
+const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
     const scrollY = window.pageYOffset;
@@ -33,17 +33,15 @@ function scrollActive() {
     sections.forEach(current => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 50;
-        secionId = current.getAttribute("id");
-
+        const sectionId = current.getAttribute("id");
+     
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.add("active-link");
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add("active-link");
         }else {
-            document.querySelector(".nav__menu a[href*=" + sectionId + "]").classList.remove("active-link");
-
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove("active-link");
         }
     })
 }
-
 window.addEventListener("scroll", scrollActive);
 
 // change background header
