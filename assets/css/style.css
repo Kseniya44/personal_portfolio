@@ -606,7 +606,7 @@ img {
         margin-right: var(--mb-4);
         margin-bottom: 0;
     }
-    .home__img {
+    .home__img img{
         width: 440px;
     }
     .about__description {
