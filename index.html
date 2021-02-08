@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Personal Portfolio</title>
@@ -341,8 +342,41 @@
                 </div>
             </div>
         </section>
+        <!-- testimonials -->
+        <section class="section testimonial container">
+            <span class="section__subtitle">My client saying</span>
+            <h2 class="section__title">Testimonial</h2>
+            
+            <div class="testimonial__container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- testimonial__content -->
+                    <div class="testimonial__content swiper-slide">
+                        <img class="testimonial__img" src="assets/img/testimonial1.jpg" alt="testimonial">
+                        <h3 class="testimonial__title">Nik Holly</h4>
+                        <span class="testimonial__client">Client</span>
+                        <p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae culpa officia saepe deleniti possimus quidem.</p>
+                    </div>
+                    <!-- testimonial__content -->
+                    <div class="testimonial__content swiper-slide">
+                        <img class="testimonial__img" src="assets/img/testimonial2.jpg" alt="testimonial">
+                        <h3 class="testimonial__title">Sara Mill</h4>
+                        <span class="testimonial__client">Client</span>
+                        <p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae culpa officia saepe deleniti possimus quidem.</p>
+                    </div>
+                    <!-- testimonial__content -->
+                    <div class="testimonial__content swiper-slide">
+                        <img class="testimonial__img" src="assets/img/testimonial3.jpg" alt="testimonial">
+                        <h3 class="testimonial__title">Clay Mitchell</h4>
+                        <span class="testimonial__client">Client</span>
+                        <p class="testimonial__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae culpa officia saepe deleniti possimus quidem.</p>
+                    </div>  
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
     </main>
     <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
 </html>
